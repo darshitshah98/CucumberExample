@@ -1,0 +1,276 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-21T23:28:53.603Z",
+        "line": 3,
+        "name": "To Check Login Functionality with Valid Username",
+        "description": "and valid password.",
+        "id": "oracle-admin;to-check-login-functionality-with-valid-username",
+        "after": [
+          {
+            "result": {
+              "duration": 773366900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NewUserStep.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3078941900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Chrome is Opened and Login Page is displayed",
+            "match": {
+              "location": "NewUserStep.chrome_is_Opened_and_Login_Page_is_displayed()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 126000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "NewUserStep.afterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 145180700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters \"Sys\" and \"Newuser123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sys\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Newuser123\"",
+                  "offset": 22
+                }
+              ],
+              "location": "NewUserStep.user_enters_and(String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 81200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "NewUserStep.afterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3167470000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on Login button",
+            "match": {
+              "location": "NewUserStep.click_on_Login_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 69900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "NewUserStep.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11474800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Home Page should display",
+            "match": {
+              "location": "NewUserStep.home_Page_should_display()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 69100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "NewUserStep.afterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3433527500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click On Administration Link",
+            "match": {
+              "location": "NewUserStep.click_On_Administration_Link()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 80100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "NewUserStep.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153795900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click On Database User",
+            "match": {
+              "location": "NewUserStep.click_On_Database_User()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 67000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "NewUserStep.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7611000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Database Page should Open",
+            "match": {
+              "location": "NewUserStep.database_Page_should_Open()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 75400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "NewUserStep.afterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 149380700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click on create",
+            "match": {
+              "location": "NewUserStep.click_on_create()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 72600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "NewUserStep.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 374590400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Enter User Details",
+            "match": {
+              "location": "NewUserStep.enter_User_Details()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 80400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "NewUserStep.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[User Created.]\u003e but was:\u003c[1 error has occurred\nUser already exists]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepDefination2.NewUserStep.user_should_be_Created(NewUserStep.java:71)\r\n\tat ✽.User should be Created(file:features/OracleAdmin.feature:15)\r\n",
+              "duration": 35156000,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "User should be Created",
+            "match": {
+              "location": "NewUserStep.user_should_be_Created()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 70500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "NewUserStep.afterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Oracle Admin",
+    "description": "",
+    "id": "oracle-admin",
+    "keyword": "Feature",
+    "uri": "file:features/OracleAdmin.feature",
+    "tags": []
+  }
+]
